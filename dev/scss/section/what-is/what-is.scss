@@ -1,9 +1,8 @@
 .what-is {
-	@extend %block-size;
-	@extend %desktop-padding;
 	box-sizing: border-box;
-	display: flex;
-	align-items: center;
+	@extend %desktop-padding;
+	padding-top: 200px;
+	padding-bottom: 200px;
 	overflow: hidden;
 	.about {
 		position: relative;

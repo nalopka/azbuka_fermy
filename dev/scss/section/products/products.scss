@@ -1,14 +1,47 @@
 .products {
-	@extend %block-size;
 	@extend %desktop-padding;
+	padding-top: 11rem;
+	padding-bottom: 11rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	ul {
+		
 		list-style: none;
-		display: flex;}
+		display: flex;
+		li {
+			max-width: 150px;
+			position: relative;
+			@extend %icon-font;
+			padding-top: 5rem;
+			border: 1px solid red;
+			margin-right: 20px;
+			
+			
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 6.4rem;
+				height: 5rem;
+				background-position: center;
+				background-size: 50%;
+				background-repeat: no-repeat;}
+		}
+		$list: (veg, meat, candy, tea, milk);
+		@each $item in $list {
+				.#{$item}::before {
+					background-image: url('img/products/#{$item}.png');
+				}
+		}
+	}
 	p { 
 		text-align: center;
-		width: 50%;}
+		width: 50%;
+		padding-bottom: 40px;}
+
 }

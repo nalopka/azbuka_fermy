@@ -1,12 +1,11 @@
 .index-header {
-	@extend %block-size;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	background-color: #DDDDDD;
+	box-sizing: border-box;
+	padding: 11rem 0;
 	.header-welcome {
-		width: 490px;
+		  width: 490px;
   		height: 311px;
+  		margin: 0 auto;
   		display: flex;
   		flex-direction: column;
   		align-items: center;
