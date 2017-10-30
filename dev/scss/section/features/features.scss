@@ -3,20 +3,20 @@
 	padding-bottom: 300px;
 	.price-block {
 		box-sizing: border-box;
-		border: solid 3px rgba(#8c9f87, 0.4);
+		border: $block-border;
 		position: relative;
 		width: 29rem;
 		height: 23rem;
 		padding: 55px 65px;
 		p {  max-width: 420px; } 
 		&:before {
-		content: "";
-		position: absolute;
-		top: -50px;
-		left: 500px;
-		height: 420px;
-		width: 625px;
-		border: 1px solid black;}
+			content: "";
+			position: absolute;
+			top: -50px;
+			left: 500px;
+			height: 420px;
+			width: 625px;
+			border: 1px solid black;}
 	}
 	.slow-food {
 		position: relative;
@@ -25,15 +25,12 @@
 		padding-top: 150px;
 		p {padding-bottom: 20px;}
 		&:before {
-		content: "";
-		position: absolute;
-		top: -50px;
-		left: -50px;
-		height: 600px;
-		width: 550px;
-		border: 1px solid black;}
-	}
-	
-
-		
+			content: "";
+			position: absolute;
+			top: -50px;
+			left: -50px;
+			height: 600px;
+			width: 550px;
+			border: 1px solid black;}
+	}	
 }

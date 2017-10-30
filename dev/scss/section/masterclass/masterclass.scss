@@ -1,0 +1,9 @@
+.masterclass {
+	height: 407px;
+	box-sizing: border-box;
+	@extend %desktop-padding;
+	padding-top: 120px;
+	background-color: black;
+	color: #f9f6f3;
+	p { max-width: 450px; }
+}

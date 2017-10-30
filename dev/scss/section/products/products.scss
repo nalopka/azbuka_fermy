@@ -7,30 +7,11 @@
 	justify-content: center;
 	align-items: center;
 	ul {
-		
-		list-style: none;
 		display: flex;
 		li {
 			max-width: 150px;
-			position: relative;
 			@extend %icon-font;
-			padding-top: 5rem;
-			background-color: red;
-			margin-right: 20px;
-			
-			
-
-			&::before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 50%;
-				transform: translateX(-50%);
-				width: 6.4rem;
-				height: 5rem;
-				background-position: center;
-				background-size: 50%;
-				background-repeat: no-repeat;}
+			@extend %icon;
 		}
 		$list: (veg, meat, candy, tea, milk);
 		@each $item in $list {

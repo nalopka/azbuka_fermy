@@ -1,0 +1,17 @@
+%icon {
+	position: relative;
+	padding-top: 5rem;
+	background-color: red;
+	margin-right: 20px;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 6.4rem;
+		height: 5rem;
+		background-position: center;
+		background-size: 50%;
+		background-repeat: no-repeat;}
+}

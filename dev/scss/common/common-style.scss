@@ -1,6 +1,7 @@
 $font-primary: OpenSans, sans-serif;
 $font-secondary: YesevaOne, sans;
 $desktop-padding: 10%;
+$block-border: solid 3px rgba(#8c9f87, 0.4);
 
 html {
 	font-family: $font-primary;
@@ -29,4 +30,6 @@ h2 {
 		padding-right: $desktop-padding + 10%;
 	}
 }
+
+
 
