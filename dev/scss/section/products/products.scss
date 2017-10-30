@@ -1,0 +1,14 @@
+.products {
+	@extend %block-size;
+	@extend %desktop-padding;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	ul {
+		list-style: none;
+		display: flex;}
+	p { 
+		text-align: center;
+		width: 50%;}
+}

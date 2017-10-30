@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 	.about {
 		position: relative;
 		width: 370px;
@@ -13,8 +14,13 @@
 			position: absolute;
 			border: 1px solid black;
 			top: -100px;
-			right: -750px;
+			right: -650px;
 			width: 600px;
 			height: 525px;}
+
 	}
+}
+@include mq("desktop-wide", min) {
+	.what-is .about:after { right: -750px; }
+				
 }

@@ -29,7 +29,7 @@ h2 {
 %desktop-padding {
 	padding-left: $desktop-padding;
 	padding-right: $desktop-padding;
-	@include mq("desktop", min) {
+	@include mq("desktop-wide", min) {
 		padding-left: $desktop-padding + 10%;
 		padding-right: $desktop-padding + 10%;
 	}

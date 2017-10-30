@@ -10,11 +10,11 @@ h1, h2, h3 { font-family: YesevaOne; font-size: 2rem; font-weight: 900; line-hei
 
 h2 { padding-bottom: 22px; }
 
-.index-header, .what-is { height: 80vh; min-height: 700px; max-height: 1000px; }
+.index-header, .what-is, .products { height: 80vh; min-height: 700px; max-height: 1000px; }
 
-.what-is { padding-left: 10%; padding-right: 10%; }
+.what-is, .products { padding-left: 10%; padding-right: 10%; }
 
-@media screen and (min-width: 1248px) { .what-is { padding-left: 20%; padding-right: 20%; } }
+@media screen and (min-width: 1440px) { .what-is, .products { padding-left: 20%; padding-right: 20%; } }
 
 @font-face { font-family: OpenSans; src: url(fonts/YesevaOne-Regular.ttf); }
 
@@ -30,10 +30,18 @@ h2 { padding-bottom: 22px; }
 
 .index-header .header-welcome p { font-size: 15px; color: #726f6f; }
 
-.what-is { -webkit-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.what-is { -webkit-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; overflow: hidden; }
 
 .what-is .about { position: relative; width: 370px; }
 
-.what-is .about:after { content: ""; display: inline-block; position: absolute; border: 1px solid black; top: -100px; right: -750px; width: 600px; height: 525px; }
+.what-is .about:after { content: ""; display: inline-block; position: absolute; border: 1px solid black; top: -100px; right: -650px; width: 600px; height: 525px; }
+
+@media screen and (min-width: 1440px) { .what-is .about:after { right: -750px; } }
 
 .concept-block { border: 1px solid red; height: 40vh; }
+
+.products { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.products ul { list-style: none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+.products p { text-align: center; width: 50%; }
