@@ -1,0 +1,27 @@
+.index-header {
+	height: 80vh;
+	min-height: 700px;
+	max-height: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.header-welcome {
+		width: 490px;
+  		height: 311px;
+  		display: flex;
+  		flex-direction: column;
+  		align-items: center;
+  		justify-content: space-around;
+  		border: 1px solid red;
+  		h1 { font-size: 0;}
+  		h2 {
+  			text-align: center;
+  			box-sizing: border-box;
+  			padding: 70px 60px 0;
+  		}
+		p {
+			font-size: 15px;
+			color: #726f6f;}
+	}
+	
+}
