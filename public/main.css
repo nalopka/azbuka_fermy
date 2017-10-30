@@ -12,9 +12,9 @@ h2 { padding-bottom: 22px; }
 
 .products ul li { font-size: 0.8rem; text-align: center; }
 
-.what-is, .products { padding-left: 10%; padding-right: 10%; }
+.what-is, .products, .features { padding-left: 10%; padding-right: 10%; }
 
-@media screen and (min-width: 1440px) { .what-is, .products { padding-left: 20%; padding-right: 20%; } }
+@media screen and (min-width: 1440px) { .what-is, .products, .features { padding-left: 20%; padding-right: 20%; } }
 
 @font-face { font-family: OpenSans, sans-serif; src: url(fonts/YesevaOne-Regular.ttf); }
 
@@ -44,7 +44,7 @@ h2 { padding-bottom: 22px; }
 
 .products ul { list-style: none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 
-.products ul li { max-width: 150px; position: relative; padding-top: 5rem; border: 1px solid red; margin-right: 20px; }
+.products ul li { max-width: 150px; position: relative; padding-top: 5rem; background-color: red; margin-right: 20px; }
 
 .products ul li::before { content: ''; position: absolute; top: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 6.4rem; height: 5rem; background-position: center; background-size: 50%; background-repeat: no-repeat; }
 
@@ -59,3 +59,17 @@ h2 { padding-bottom: 22px; }
 .products ul .milk::before { background-image: url("img/products/milk.png"); }
 
 .products p { text-align: center; width: 50%; padding-bottom: 40px; }
+
+.features { padding-bottom: 300px; }
+
+.features .price-block { -webkit-box-sizing: border-box; box-sizing: border-box; border: solid 3px rgba(140, 159, 135, 0.4); position: relative; width: 29rem; height: 23rem; padding: 55px 65px; }
+
+.features .price-block p { max-width: 420px; }
+
+.features .price-block:before { content: ""; position: absolute; top: -50px; left: 500px; height: 420px; width: 625px; border: 1px solid black; }
+
+.features .slow-food { position: relative; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 55%; padding-top: 150px; }
+
+.features .slow-food p { padding-bottom: 20px; }
+
+.features .slow-food:before { content: ""; position: absolute; top: -50px; left: -50px; height: 600px; width: 550px; border: 1px solid black; }
