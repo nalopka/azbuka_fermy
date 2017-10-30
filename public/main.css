@@ -14,7 +14,7 @@ h1, h2, h3 { font-family: YesevaOne, sans; font-size: 2rem; font-weight: 900; li
 
 h2 { padding-bottom: 22px; }
 
-.products ul li, .tenants .more-review li { font-size: 0.8rem; text-align: center; }
+.products ul li, .tenants .more-review li, .index-footer address { font-size: 0.8rem; text-align: center; }
 
 .what-is, .products, .features, .masterclass, .tenants { padding-left: 10%; padding-right: 10%; }
 
@@ -86,7 +86,7 @@ h2 { padding-bottom: 22px; }
 
 .masterclass p { max-width: 450px; }
 
-.tenants { padding-right: 5%; padding-top: 150px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+.tenants { padding-right: 5%; padding-top: 150px; padding-bottom: 150px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 
 .tenants .review { -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; }
 
@@ -96,15 +96,15 @@ h2 { padding-bottom: 22px; }
 
 .tenants .review input { background: transparent; outline: none; border: none; width: 100%; line-height: 28px; font-size: 0.8rem; }
 
-.tenants .more-review { position: relative; padding-top: 50px; width: 31rem; height: 21rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; border: solid 3px rgba(140, 159, 135, 0.4); }
+.tenants .more-review { position: relative; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 50px; padding-left: 20px; padding-right: 20px; width: 31rem; height: 24rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; border: solid 3px rgba(140, 159, 135, 0.4); }
 
 .tenants .more-review .empty { visibility: hidden; }
 
 .tenants .more-review li { width: 180px; margin-right: 0; border: 1px solid red; }
 
-.tenants .more-review:before { content: ""; position: absolute; top: -50px; left: -25px; width: 11.5rem; height: 11.25rem; border: 1px solid black; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); }
+.tenants .more-review:before { content: ""; position: absolute; top: -30px; left: -25px; width: 11.5rem; height: 11.25rem; border: 1px solid black; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); }
 
-.tenants .more-review:after { content: ""; position: absolute; width: 10.5rem; height: 14.5rem; bottom: -80px; right: -30px; border: 1px solid black; }
+.tenants .more-review:after { content: ""; position: absolute; width: 10.5rem; height: 14.5rem; bottom: -80px; right: -30px; border: 1px solid black; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); }
 
 .tenants .meat::before { background-image: url("img/products/meat.png"); }
 
@@ -113,3 +113,11 @@ h2 { padding-bottom: 22px; }
 .tenants .tea::before { background-image: url("img/products/tea.png"); }
 
 .tenants .milk::before { background-image: url("img/products/milk.png"); }
+
+.index-footer { height: 31rem; border: 1px solid green; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 10%; padding-top: 100px; background: transparent url("img/krasivaya_dolina_1920x1200.jpg") left top/cover no-repeat; }
+
+.index-footer address { display: inline-block; padding-top: 8rem; padding-bottom: 1rem; padding-left: 2rem; padding-right: 2rem; border: 1px solid red; font-style: normal; }
+
+.index-footer address p { max-width: 312px; padding-bottom: 20px; }
+
+.index-footer address a { text-decoration: none; color: inherit; }

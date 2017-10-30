@@ -2,9 +2,10 @@
 	@extend %desktop-padding;
 	padding-right: $desktop-padding - 5%;
 	padding-top: 150px;
+	padding-bottom: 150px;
 	display: flex;
 	justify-content: space-between;
-	
+
 	@import "review";
 	@import "more-review";
 }
