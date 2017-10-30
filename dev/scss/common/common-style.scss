@@ -1,5 +1,6 @@
 $font-primary: OpenSans;
 $font-secondary: YesevaOne;
+$desktop-padding: 10%;
 
 html {
 	font-family: $font-primary;
@@ -13,7 +14,24 @@ h1, h2, h3 {
 	font-weight: 900;
 	line-height: 1.1;
 }
+h2 {
+	padding-bottom: 22px;
+}
 %icon-font {
 	font-size: 1.25rem;
 	text-align: center;
 }
+%block-size {
+	height: 80vh;
+	min-height: 700px;
+	max-height: 1000px;
+}
+%desktop-padding {
+	padding-left: $desktop-padding;
+	padding-right: $desktop-padding;
+	@include mq("desktop", min) {
+		padding-left: $desktop-padding + 10%;
+		padding-right: $desktop-padding + 10%;
+	}
+}
+

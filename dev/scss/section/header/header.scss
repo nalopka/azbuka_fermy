@@ -1,10 +1,9 @@
 .index-header {
-	height: 80vh;
-	min-height: 700px;
-	max-height: 1000px;
+	@extend %block-size;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #DDDDDD;
 	.header-welcome {
 		width: 490px;
   		height: 311px;

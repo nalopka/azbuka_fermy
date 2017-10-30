@@ -1,7 +1,10 @@
 @import "common/mixins";
+@import "common/reset";
 @import "common/common-style.scss";
 @import "common/fonts";
-@import "common/reset";
+
 @import "ui/button";
 
 @import "section/header/header";
+@import "section/what-is/what-is";
+@import "section/concept-block/concept-block";
