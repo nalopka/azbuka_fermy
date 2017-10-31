@@ -8,4 +8,7 @@
 
 	@import "review";
 	@import "more-review";
+	@include mq('desktop-wide', min) {
+		padding-right: $desktop-padding;
+	}
 }

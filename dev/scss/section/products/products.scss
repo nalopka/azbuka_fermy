@@ -1,6 +1,6 @@
 .products {
 	@extend %desktop-padding;
-	padding-top: 11rem;
+	padding-top: 8rem;
 	padding-bottom: 11rem;
 	display: flex;
 	flex-direction: column;
@@ -8,16 +8,18 @@
 	align-items: center;
 	ul {
 		display: flex;
+		justify-content: space-around;
 		li {
-			max-width: 150px;
+			margin-right: 20px;
+			margin-left: 20px;
+			max-width: 120px;
 			@extend %icon-font;
-			@extend %icon;
-		}
+			@extend %icon;}
+
 		$list: (veg, meat, candy, tea, milk);
 		@each $item in $list {
-				.#{$item}::before {
-					background-image: url('img/products/#{$item}.png');
-				}
+				// .#{$item}::before { background-image: url('img/products/#{$item}.png'); }
+				.#{$item}::before { background-image: url('img/products/icon.png'); }
 		}
 	}
 	p { 

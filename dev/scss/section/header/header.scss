@@ -2,6 +2,8 @@
 	background-color: #DDDDDD;
 	box-sizing: border-box;
 	padding: 11rem 0;
+  background: 
+    url('img/header/header.jpg') left top/cover no-repeat;
 	.header-welcome {
 		  width: 490px;
   		height: 311px;
@@ -9,15 +11,18 @@
   		display: flex;
   		flex-direction: column;
   		align-items: center;
-  		justify-content: space-around;
-  		border: 1px solid red;
+  		justify-content: center;
+      background-color: transparent;
+      background: 
+        url('img/header/logo.png') center 20px/107px 112px no-repeat,
+        url('img/header/header-border.svg') left top/cover no-repeat;
   		h1 { font-size: 0;}
   		h2 {
   			text-align: center;
   			box-sizing: border-box;
-  			padding: 70px 60px 0;
-  		}
+  			padding: 110px 60px 0;}
 		p {
+      padding-top: 20px;
 			font-size: 15px;
 			color: #726f6f;}
 	}

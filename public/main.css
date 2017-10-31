@@ -26,63 +26,77 @@ h2 { padding-bottom: 22px; }
 
 .tenants .review button { width: 214px; height: 45px; background-color: #433939; border: none; cursor: pointer; font-size: 0.8rem; line-height: 1.89; text-align: center; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); color: #f9f6f3; }
 
-.products ul li, .tenants .more-review li { position: relative; padding-top: 5rem; background-color: red; margin-right: 20px; }
+.products ul li, .tenants .more-review li { position: relative; padding-top: 5rem; margin-right: 20px; }
 
 .products ul li::before, .tenants .more-review li::before { content: ''; position: absolute; top: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 6.4rem; height: 5rem; background-position: center; background-size: 50%; background-repeat: no-repeat; }
 
-.index-header { background-color: #DDDDDD; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 11rem 0; }
+.index-header { background-color: #DDDDDD; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 11rem 0; background: url("img/header/header.jpg") left top/cover no-repeat; }
 
-.index-header .header-welcome { width: 490px; height: 311px; margin: 0 auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; border: 1px solid red; }
+.index-header .header-welcome { width: 490px; height: 311px; margin: 0 auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; background-color: transparent; background: url("img/header/logo.png") center 20px/107px 112px no-repeat, url("img/header/header-border.svg") left top/cover no-repeat; }
 
 .index-header .header-welcome h1 { font-size: 0; }
 
-.index-header .header-welcome h2 { text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 70px 60px 0; }
+.index-header .header-welcome h2 { text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 110px 60px 0; }
 
-.index-header .header-welcome p { font-size: 15px; color: #726f6f; }
+.index-header .header-welcome p { padding-top: 20px; font-size: 15px; color: #726f6f; }
 
 .what-is { -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 200px; padding-bottom: 200px; overflow: hidden; }
 
 .what-is .about { position: relative; width: 370px; }
 
-.what-is .about:after { content: ""; display: inline-block; position: absolute; border: 1px solid black; top: -100px; right: -650px; width: 600px; height: 525px; }
+.what-is .about .about-image { position: absolute; border: solid 3px rgba(140, 159, 135, 0.4); top: 0; right: -650px; width: 363px; height: 336px; }
+
+.what-is .about .about-image .lettering { position: absolute; left: -50px; bottom: 75px; z-index: 3; width: 314px; height: 58px; background: transparent url("img/lettering-01.png") left top/cover no-repeat; }
+
+.what-is .about .about-image:before { content: ''; position: absolute; top: -100px; left: -50px; width: 362px; height: 241px; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); background: transparent url("img/what-is/kon-01.jpg") left top/cover no-repeat; }
+
+.what-is .about .about-image:after { content: ''; position: absolute; top: 50px; left: 200px; width: 241px; height: 321px; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); background: transparent url("img/what-is/kon-02.jpg") left top/cover no-repeat; }
 
 @media screen and (min-width: 1440px) { .what-is .about:after { right: -750px; } }
 
-.concept-block { border: 1px solid red; height: 316px; }
+.concept-block { min-height: 316px; background-color: transparent; background: url("img/concept-block/lettering-03.png") 70% 35%/25% no-repeat, url("img/concept-block/words.jpg") left top/cover no-repeat; }
 
-.products { padding-top: 11rem; padding-bottom: 11rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.products { padding-top: 8rem; padding-bottom: 11rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
-.products ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.products ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
 
-.products ul li { max-width: 150px; }
+.products ul li { margin-right: 20px; margin-left: 20px; max-width: 120px; }
 
-.products ul .veg::before { background-image: url("img/products/veg.png"); }
+.products ul .veg::before { background-image: url("img/products/icon.png"); }
 
-.products ul .meat::before { background-image: url("img/products/meat.png"); }
+.products ul .meat::before { background-image: url("img/products/icon.png"); }
 
-.products ul .candy::before { background-image: url("img/products/candy.png"); }
+.products ul .candy::before { background-image: url("img/products/icon.png"); }
 
-.products ul .tea::before { background-image: url("img/products/tea.png"); }
+.products ul .tea::before { background-image: url("img/products/icon.png"); }
 
-.products ul .milk::before { background-image: url("img/products/milk.png"); }
+.products ul .milk::before { background-image: url("img/products/icon.png"); }
 
 .products p { text-align: center; width: 50%; padding-bottom: 40px; }
 
 .features { padding-bottom: 300px; }
 
-.features .price-block { -webkit-box-sizing: border-box; box-sizing: border-box; border: solid 3px rgba(140, 159, 135, 0.4); position: relative; width: 29rem; height: 23rem; padding: 55px 65px; }
+.features .price-block { -webkit-box-sizing: border-box; box-sizing: border-box; border: solid 3px rgba(140, 159, 135, 0.4); position: relative; width: 29rem; height: 23rem; padding-top: 55px; padding-left: 65px; padding-right: 100px; }
 
 .features .price-block p { max-width: 420px; }
 
-.features .price-block:before { content: ""; position: absolute; top: -50px; left: 500px; height: 420px; width: 625px; border: 1px solid black; }
+.features .price-block .price-block-image { position: absolute; top: -50px; left: 500px; width: 625px; height: 359px; z-index: 2; background: url("img/features/price.jpg") left top/cover no-repeat; }
 
-.features .slow-food { position: relative; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 55%; padding-top: 150px; }
+.features .price-block .price-block-image::after { content: ""; position: absolute; bottom: -80px; left: 30px; width: 314px; height: 58px; z-index: 1; background: url("img/features/lettering-01.png") left top/cover no-repeat; }
+
+.features .slow-food { position: relative; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 60%; padding-top: 150px; }
 
 .features .slow-food p { padding-bottom: 20px; }
 
-.features .slow-food:before { content: ""; position: absolute; top: -50px; left: -50px; height: 600px; width: 550px; border: 1px solid black; }
+.features .slow-food .slow-food-image { position: absolute; top: 150px; left: 100px; width: 363px; height: 336px; border: solid 3px rgba(140, 159, 135, 0.4); }
 
-.masterclass { height: 407px; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 120px; background-color: black; color: #f9f6f3; }
+.features .slow-food .slow-food-image .lettering { position: absolute; z-index: 3; right: -100px; bottom: 50px; width: 337px; height: 81px; background: transparent url("img/lettering-02.png") left top/cover no-repeat; }
+
+.features .slow-food .slow-food-image:after { content: ""; position: absolute; top: -200px; left: 125px; width: 324px; height: 358px; z-index: 1; background: transparent url("img/features/slow-01.jpg") left top/cover no-repeat; }
+
+.features .slow-food .slow-food-image:before { content: ""; position: absolute; top: 100px; left: -150px; width: 363px; height: 275px; z-index: 2; background: transparent url("img/features/slow-02.jpg") left top/cover no-repeat; }
+
+.masterclass { height: 407px; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 120px; background-color: black; color: #f9f6f3; background: transparent url("img/space.jpg") left top/cover no-repeat; }
 
 .masterclass p { max-width: 450px; }
 
@@ -100,21 +114,23 @@ h2 { padding-bottom: 22px; }
 
 .tenants .more-review .empty { visibility: hidden; }
 
-.tenants .more-review li { width: 180px; margin-right: 0; border: 1px solid red; }
+.tenants .more-review li { width: 180px; margin-right: 0; }
 
-.tenants .more-review:before { content: ""; position: absolute; top: -30px; left: -25px; width: 11.5rem; height: 11.25rem; border: 1px solid black; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); }
+.tenants .more-review:before { content: ""; position: absolute; top: -30px; left: -25px; width: 11.5rem; height: 11.25rem; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); background: transparent url("img/tenants/rent-01.jpg") left top/cover no-repeat; }
 
-.tenants .more-review:after { content: ""; position: absolute; width: 10.5rem; height: 14.5rem; bottom: -80px; right: -30px; border: 1px solid black; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); }
+.tenants .more-review:after { content: ""; position: absolute; width: 10.5rem; height: 14.5rem; bottom: -80px; right: -30px; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); background: transparent url("img/tenants/rent-02.jpg") left top/cover no-repeat; }
 
-.tenants .meat::before { background-image: url("img/products/meat.png"); }
+.tenants .meat::before { background-image: url("img/products/icon.png"); }
 
-.tenants .candy::before { background-image: url("img/products/candy.png"); }
+.tenants .candy::before { background-image: url("img/products/icon.png"); }
 
-.tenants .tea::before { background-image: url("img/products/tea.png"); }
+.tenants .tea::before { background-image: url("img/products/icon.png"); }
 
-.tenants .milk::before { background-image: url("img/products/milk.png"); }
+.tenants .milk::before { background-image: url("img/products/icon.png"); }
 
-.index-footer { height: 31rem; border: 1px solid green; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 10%; padding-top: 100px; background: transparent url("img/krasivaya_dolina_1920x1200.jpg") left top/cover no-repeat; }
+@media screen and (min-width: 1440px) { .tenants { padding-right: 10%; } }
+
+.index-footer { height: 31rem; border: 1px solid green; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 10%; padding-top: 100px; }
 
 .index-footer address { display: inline-block; padding-top: 8rem; padding-bottom: 1rem; padding-left: 2rem; padding-right: 2rem; border: 1px solid red; font-style: normal; }
 

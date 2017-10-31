@@ -4,8 +4,10 @@
 	box-sizing: border-box;
 	padding-left: $desktop-padding;
 	padding-top: 100px;
-	background:transparent url('img/krasivaya_dolina_1920x1200.jpg') left top/cover no-repeat;
 	address {
+		// background: 
+	 //        url('img/header/logo.png') center 20px/107px 112px no-repeat,
+	 //        url('img/header/header-border.svg') left top/cover no-repeat;
 		display: inline-block;
 		@extend %icon-font;
 		padding-top: 8rem;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="490px" height="311px" viewBox="0 0 490 311" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>header-border</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M151.599826,78 L0,78 L0,311 L490,311 L490,78 L339.400174,78 C331.180289,33.6145384 292.265692,0 245.5,0 C198.734308,0 159.819711,33.6145384 151.599826,78 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Azbuka-01" transform="translate(-396.000000, -142.000000)">
+            <g id="Group-4">
+                <g id="Group-5" transform="translate(396.000000, 142.000000)">
+                    <g id="header-border">
+                        <use fill="#FFFDFC" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke-opacity="0.516530797" stroke="#979797" stroke-width="8" d="M4,82 L4,307 L486,307 L486,82 L336.072932,82 L335.467051,78.7283875 C327.496787,35.6908175 289.786568,4 245.5,4 C201.213432,4 163.503213,35.6908175 155.532949,78.7283875 L154.927068,82 L4,82 Z"></path>
+                        <path stroke="#FFFFFF" stroke-width="6" d="M3,81 L3,308 L487,308 L487,81 L336.904742,81 L336.450332,78.5462906 C328.39267,35.0367963 290.270757,3 245.5,3 C200.729243,3 162.60733,35.0367963 154.549668,78.5462906 L154.095258,81 L3,81 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
