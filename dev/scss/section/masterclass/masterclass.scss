@@ -1,10 +1,13 @@
 .masterclass {
-	height: 407px;
-	box-sizing: border-box;
 	@extend %desktop-padding;
-	padding-top: 120px;
+	box-sizing: border-box;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	background-color: black;
 	color: #f9f6f3;
 	background:transparent url('img/space.jpg') left top/cover no-repeat;
-	p { max-width: 450px; }
+	
+	p { 
+		max-width: 450px; 
+	}
 }

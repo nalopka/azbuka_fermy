@@ -1,8 +1,9 @@
 .features {
+	@import "price-block";
+	@import "slow-food";
 	@extend %desktop-padding;
 	padding-bottom: 300px;
 	padding-top: 150px;
 	overflow: hidden;
-	@import "price-block";
-	@import "slow-food";
+	
 }

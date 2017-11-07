@@ -1,0 +1,18 @@
+.concept-place {
+	padding-left: $desktop-padding + 10%;
+	padding-right: $desktop-padding + 10%;
+	padding-top: 200px;
+	padding-bottom: 200px;
+
+	@import "about-image";
+
+	.about {
+		position: relative;
+		width: 370px;
+	}
+
+	@include mq("desktop-wide", min) {
+		padding-left: $desktop-padding + 20%;
+		padding-right: $desktop-padding + 20%;
+	}
+}

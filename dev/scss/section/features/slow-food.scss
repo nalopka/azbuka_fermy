@@ -3,7 +3,9 @@
 		box-sizing: border-box;
 		padding-left: 60%;
 		padding-top: 150px;
-		p {padding-bottom: 20px;}
+		p {
+			padding-bottom: 20px;
+		}
 		.slow-food-image {
 			position: absolute;
 			top: 150px;
@@ -11,6 +13,7 @@
 			width: 363px;
 		  	height: 336px;
 		  	border: $block-border;
+
 		  	.lettering {
 		  		position: absolute;
 		  		z-index: 3;
@@ -19,9 +22,8 @@
 		  		width: 337px;
 		  		height: 81px;
 		  		background:transparent url('img/lettering-02.png') left top/cover no-repeat;
-
-
 		  	}
+
 			&:after {
 				content: "";
 				position: absolute;
@@ -30,7 +32,9 @@
 				width: 324px;
   				height: 358px;
   				z-index: 1;
-				background:transparent url('img/features/slow-01.jpg') left top/cover no-repeat;}
+				background:transparent url('img/features/slow-01.jpg') left top/cover no-repeat;
+			}
+
 			&:before {
 				content: "";
 				position: absolute;
@@ -39,6 +43,7 @@
 				width: 363px;
 				height: 275px;
 				z-index: 2;
-				background:transparent url('img/features/slow-02.jpg') left top/cover no-repeat;}
+				background:transparent url('img/features/slow-02.jpg') left top/cover no-repeat;
+			}
 		}
 	}	

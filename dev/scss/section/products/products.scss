@@ -2,29 +2,35 @@
 	@extend %desktop-padding;
 	padding-top: 8rem;
 	padding-bottom: 5rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	.text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		text-align: center;
+	}
+
 	ul {
 		display: flex;
 		justify-content: space-around;
+
 		li {
+			@extend %icon-font;
+			@extend %icon;
 			margin-right: 20px;
 			margin-left: 20px;
 			max-width: 120px;
-			@extend %icon-font;
-			@extend %icon;}
+		}
 
-		$list: (veg, meat, candy, tea, milk);
+		$list: (fruit, fish, milk, tea, cake);
 		@each $item in $list {
-				// .#{$item}::before { background-image: url('img/products/#{$item}.png'); }
-				.#{$item}::before { background-image: url('img/products/icon.png'); }
+				.#{$item}::before { background-image: url('img/icons/#{$item}.svg'); }
 		}
 	}
+	
 	p { 
-		text-align: center;
-		width: 50%;
-		padding-bottom: 40px;}
+		max-width: 570px;
+		padding-bottom: 40px;
+	}
 
 }

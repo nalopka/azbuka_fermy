@@ -1,14 +1,15 @@
-@import "common/mixins";
 @import "common/reset";
-@import "common/common-style.scss";
+@import "common/mixins";
 @import "common/fonts";
+@import "common/common-style.scss";
+
 
 @import "ui/button";
 @import "ui/icons";
 
 @import "section/header/header";
-@import "section/what-is/what-is";
-@import "section/concept-block/concept-block";
+@import "section/concept-place/concept-place";
+@import "section/eat-everything/eat-everything";
 @import "section/products/products";
 @import "section/features/features";
 @import "section/masterclass/masterclass";

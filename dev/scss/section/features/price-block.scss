@@ -7,15 +7,20 @@
 	padding-top: 55px;
 	padding-left: 65px;
 	padding-right: 100px;
-	p {  max-width: 420px; } 
+
+	p {  
+		max-width: 420px; 
+	} 
+	
 	.price-block-image {
 		position: absolute;
 		top: -50px;
 		left: 500px;
 		width: 625px;
-			height: 359px;
-			z-index: 2;
-			background:url('img/features/price.jpg') left top/cover no-repeat;
+		height: 359px;
+		z-index: 2;
+		background:url('img/features/price.jpg') left top/cover no-repeat;
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -24,6 +29,7 @@
 			width: 314px;
 			height: 58px;
 			z-index: 1;
-			background:url('img/features/lettering-01.png') left top/cover no-repeat;}
+			background:url('img/features/lettering-01.png') left top/cover no-repeat;
+		}
 	}
 }

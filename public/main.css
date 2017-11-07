@@ -8,71 +8,75 @@ h1, h2, h3, h4, h5, h6 { font-weight: inherit; }
 
 ul { list-style: none; }
 
-html { font-family: OpenSans, sans-serif; font-size: 20px; line-height: 1.4; color: #444; }
+@font-face { font-family: OpenSans, sans-serif; src: url(fonts/YesevaOne-Regular_v2.otf); }
 
-h1, h2, h3 { font-family: YesevaOne, sans; font-size: 2rem; font-weight: 900; line-height: 1.1; }
+@font-face { font-family: YesevaOne, serif; src: url(fonts/OpenSans-Light.ttf); }
 
-h2 { padding-bottom: 22px; }
+html { font-family: OpenSans, sans-serif; font-size: 20px; line-height: 1.4; color: #444; font-weight: 300; }
+
+h1, h2, h3 { font-family: YesevaOne, serif; font-size: 2rem; font-weight: normal; line-height: 1.1; }
+
+h2 { margin-bottom: 22px; }
 
 .products ul li, .tenants .more-review li, .index-footer address { font-size: 0.8rem; text-align: center; }
 
-.what-is, .products, .features, .masterclass, .tenants { padding-left: 10%; padding-right: 10%; }
+.products, .features, .masterclass, .tenants { padding-left: 10%; padding-right: 10%; }
 
-@media screen and (min-width: 1440px) { .what-is, .products, .features, .masterclass, .tenants { padding-left: 20%; padding-right: 20%; } }
+@media screen and (min-width: 1440px) { .products, .features, .masterclass, .tenants { padding-left: 20%; padding-right: 20%; } }
 
-@font-face { font-family: OpenSans, sans-serif; src: url(fonts/YesevaOne-Regular_v2.otf); }
-
-@font-face { font-family: YesevaOne, sans; src: url(fonts/OpenSans-Light.ttf); }
-
-.tenants .review button { width: 214px; height: 45px; background-color: #433939; border: none; cursor: pointer; font-size: 0.8rem; line-height: 1.89; text-align: center; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); color: #f9f6f3; }
+.tenants .review button { padding: 8px 42px; background-color: #433939; border: none; cursor: pointer; font-size: 0.8rem; line-height: 1.89; text-align: center; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); color: #f9f6f3; }
 
 .products ul li, .tenants .more-review li { position: relative; padding-top: 5rem; margin-right: 20px; }
 
 .products ul li::before, .tenants .more-review li::before { content: ''; position: absolute; top: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 6.4rem; height: 5rem; background-position: center; background-size: 50%; background-repeat: no-repeat; }
 
-.index-header { background-color: #DDDDDD; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 11rem 0; background: url("img/header/header.jpg") left top/cover no-repeat; }
+.index-header { background-color: #DDDDDD; height: 80vh; min-height: 700px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; background: url("img/header/header.jpg") left top/cover no-repeat; }
 
-.index-header .header-welcome { width: 490px; height: 311px; margin: 0 auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; background-color: transparent; background: url("img/header/logo.png") center 20px/107px 112px no-repeat, url("img/header/header-border.svg") left top/cover no-repeat; }
+.index-header .header-welcome { width: 490px; height: 311px; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 20px 60px 40px 60px; text-align: center; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; background-color: transparent; background: url("img/header/header-border.svg") left top/cover no-repeat; }
 
-.index-header .header-welcome h1 { font-size: 0; }
+.index-header .header-welcome h1 { width: 107px; height: 112px; background: transparent url("img/header/logo.png") top left/cover no-repeat; font-size: 0; }
 
-.index-header .header-welcome h2 { text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 110px 60px 0; }
+.index-header .header-welcome h2 { margin-bottom: 0; }
 
-.index-header .header-welcome p { padding-top: 20px; font-size: 15px; color: #726f6f; }
+.index-header .header-welcome p { font-size: 15px; color: #726f6f; }
 
-.what-is { -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 200px; padding-bottom: 200px; overflow: hidden; }
+.concept-place { padding-left: 20%; padding-right: 20%; padding-top: 200px; padding-bottom: 200px; }
 
-.what-is .about { position: relative; width: 370px; }
+.concept-place .about-image { position: absolute; border: solid 3px rgba(140, 159, 135, 0.4); top: 0; left: 120%; width: 363px; height: 336px; }
 
-.what-is .about .about-image { position: absolute; border: solid 3px rgba(140, 159, 135, 0.4); top: 0; right: -650px; width: 363px; height: 336px; }
+.concept-place .about-image .lettering { position: absolute; left: -50px; bottom: 75px; z-index: 3; width: 314px; height: 58px; background: transparent url("img/lettering-01.png") left top/cover no-repeat; }
 
-.what-is .about .about-image .lettering { position: absolute; left: -50px; bottom: 75px; z-index: 3; width: 314px; height: 58px; background: transparent url("img/lettering-01.png") left top/cover no-repeat; }
+.concept-place .about-image:before { content: ''; position: absolute; top: -100px; left: -50px; width: 362px; height: 241px; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); background: transparent url("img/concept-place/kon-01.jpg") left top/cover no-repeat; }
 
-.what-is .about .about-image:before { content: ''; position: absolute; top: -100px; left: -50px; width: 362px; height: 241px; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); background: transparent url("img/what-is/kon-01.jpg") left top/cover no-repeat; }
+.concept-place .about-image:after { content: ''; position: absolute; top: 50px; left: 200px; width: 241px; height: 321px; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); background: transparent url("img/concept-place/kon-02.jpg") left top/cover no-repeat; }
 
-.what-is .about .about-image:after { content: ''; position: absolute; top: 50px; left: 200px; width: 241px; height: 321px; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); background: transparent url("img/what-is/kon-02.jpg") left top/cover no-repeat; }
+.concept-place .about { position: relative; width: 370px; }
 
-@media screen and (min-width: 1440px) { .what-is .about:after { right: -750px; } }
+@media screen and (min-width: 1440px) { .concept-place { padding-left: 30%; padding-right: 30%; } }
 
-.concept-block { min-height: 316px; background-color: transparent; background: url("img/concept-block/lettering-03.png") 70% 35%/25% no-repeat, url("img/concept-block/words.jpg") left top/cover no-repeat; }
+.eat-everything { min-height: 316px; position: relative; background: transparent url("img/eat-everything/words.jpg") left top/cover no-repeat; }
 
-.products { padding-top: 8rem; padding-bottom: 5rem; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.eat-everything:before { position: absolute; left: 50%; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 435px; height: 104px; content: ''; background: transparent url("img/eat-everything/lettering-03.png") left top/cover no-repeat; }
+
+.products { padding-top: 8rem; padding-bottom: 5rem; }
+
+.products .text { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; text-align: center; }
 
 .products ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
 
 .products ul li { margin-right: 20px; margin-left: 20px; max-width: 120px; }
 
-.products ul .veg::before { background-image: url("img/products/icon.png"); }
+.products ul .fruit::before { background-image: url("img/icons/fruit.svg"); }
 
-.products ul .meat::before { background-image: url("img/products/icon.png"); }
+.products ul .fish::before { background-image: url("img/icons/fish.svg"); }
 
-.products ul .candy::before { background-image: url("img/products/icon.png"); }
+.products ul .milk::before { background-image: url("img/icons/milk.svg"); }
 
-.products ul .tea::before { background-image: url("img/products/icon.png"); }
+.products ul .tea::before { background-image: url("img/icons/tea.svg"); }
 
-.products ul .milk::before { background-image: url("img/products/icon.png"); }
+.products ul .cake::before { background-image: url("img/icons/cake.svg"); }
 
-.products p { text-align: center; width: 50%; padding-bottom: 40px; }
+.products p { max-width: 570px; padding-bottom: 40px; }
 
 .features { padding-bottom: 300px; padding-top: 150px; overflow: hidden; }
 
@@ -96,7 +100,7 @@ h2 { padding-bottom: 22px; }
 
 .features .slow-food .slow-food-image:before { content: ""; position: absolute; top: 100px; left: -150px; width: 363px; height: 275px; z-index: 2; background: transparent url("img/features/slow-02.jpg") left top/cover no-repeat; }
 
-.masterclass { height: 407px; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 120px; background-color: black; color: #f9f6f3; background: transparent url("img/space.jpg") left top/cover no-repeat; }
+.masterclass { -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 5rem; padding-bottom: 5rem; background-color: black; color: #f9f6f3; background: transparent url("img/space.jpg") left top/cover no-repeat; }
 
 .masterclass p { max-width: 450px; }
 
@@ -120,19 +124,19 @@ h2 { padding-bottom: 22px; }
 
 .tenants .more-review:after { content: ""; position: absolute; width: 10.5rem; height: 14.5rem; bottom: -80px; right: -30px; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); background: transparent url("img/tenants/rent-02.jpg") left top/cover no-repeat; }
 
-.tenants .meat::before { background-image: url("img/products/icon.png"); }
+.tenants .ready::before { background-image: url("img/icons/ready.svg"); }
 
-.tenants .candy::before { background-image: url("img/products/icon.png"); }
+.tenants .ads::before { background-image: url("img/icons/ads.svg"); }
 
-.tenants .tea::before { background-image: url("img/products/icon.png"); }
+.tenants .storage::before { background-image: url("img/icons/storage.svg"); }
 
-.tenants .milk::before { background-image: url("img/products/icon.png"); }
+.tenants .place::before { background-image: url("img/icons/place.svg"); }
 
-@media screen and (min-width: 1440px) { .tenants { padding-right: 10%; } }
+@media screen and (min-width: 1440px) { .tenants { padding-right: 10%; padding-left: 30%; } }
 
 .index-footer { height: 31rem; border: 1px solid green; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 10%; padding-top: 100px; }
 
-.index-footer address { display: inline-block; padding-top: 8rem; padding-bottom: 1rem; padding-left: 2rem; padding-right: 2rem; border: 1px solid red; font-style: normal; }
+.index-footer address { display: inline-block; padding: 8rem 2rem 1rem 2rem; border: 1px solid red; font-style: normal; }
 
 .index-footer address p { max-width: 312px; padding-bottom: 20px; }
 

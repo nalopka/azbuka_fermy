@@ -1,5 +1,4 @@
-$font-primary: OpenSans, sans-serif;
-$font-secondary: YesevaOne, sans;
+
 $desktop-padding: 10%;
 $block-border: solid 3px rgba(#8c9f87, 0.4);
 
@@ -8,15 +7,16 @@ html {
 	font-size: 20px;
 	line-height: 1.4;
 	color: #444;
+	font-weight: 300;
 }
 h1, h2, h3 {
 	font-family: $font-secondary;
 	font-size: 2rem;
-	font-weight: 900;
+	font-weight: normal;
 	line-height: 1.1;
 }
 h2 {
-	padding-bottom: 22px;
+	margin-bottom: 22px;
 }
 %icon-font {
 	font-size: 0.8rem;

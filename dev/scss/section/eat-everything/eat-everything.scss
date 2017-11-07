@@ -1,0 +1,16 @@
+.eat-everything {
+	min-height: 316px;
+	position: relative;
+	background: transparent url('img/eat-everything/words.jpg') left top/cover no-repeat;
+	&:before {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 435px;
+		height: 104px;
+		content: '';
+
+		background: transparent url('img/eat-everything/lettering-03.png') left top/cover no-repeat;
+	}
+}
