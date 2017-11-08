@@ -1,10 +1,10 @@
 $font-primary: OpenSans, sans-serif;
-$font-secondary: YesevaOne, serif;
+$font-secondary: Yeseva One, cursive;
 @font-face {
-	font-family: $font-primary;
-	src: url(fonts/YesevaOne-Regular_v2.otf);
+	font-family: OpenSans;
+	src: url(fonts/OpenSans-Light.ttf);
 }
 @font-face {
-	font-family: $font-secondary;
-	src: url(fonts/OpenSans-Light.ttf);
+	font-family: Yeseva One;
+	src: url(fonts/YesevaOne-Regular.ttf);
 }

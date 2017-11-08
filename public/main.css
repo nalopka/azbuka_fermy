@@ -8,13 +8,13 @@ h1, h2, h3, h4, h5, h6 { font-weight: inherit; }
 
 ul { list-style: none; }
 
-@font-face { font-family: OpenSans, sans-serif; src: url(fonts/YesevaOne-Regular_v2.otf); }
+@font-face { font-family: OpenSans; src: url(fonts/OpenSans-Light.ttf); }
 
-@font-face { font-family: YesevaOne, serif; src: url(fonts/OpenSans-Light.ttf); }
+@font-face { font-family: Yeseva One; src: url(fonts/YesevaOne-Regular.ttf); }
 
 html { font-family: OpenSans, sans-serif; font-size: 20px; line-height: 1.4; color: #444; font-weight: 300; }
 
-h1, h2, h3 { font-family: YesevaOne, serif; font-size: 2rem; font-weight: normal; line-height: 1.1; }
+h1, h2, h3 { font-family: Yeseva One, cursive; font-size: 2rem; font-weight: normal; line-height: 1.1; }
 
 h2 { margin-bottom: 22px; }
 
