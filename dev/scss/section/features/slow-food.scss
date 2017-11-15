@@ -8,29 +8,29 @@
 		}
 		.slow-food-image {
 			position: absolute;
-			top: 150px;
-			left: 100px;
-			width: 363px;
-		  	height: 336px;
+			top: 7.5rem;
+			left: 5rem;
+			width: 18.15rem;
+		  	height: 16.8rem;
 		  	border: $block-border;
 
 		  	.lettering {
 		  		position: absolute;
 		  		z-index: 3;
-		  		right: -100px;
-		  		bottom: 50px;
-		  		width: 337px;
-		  		height: 81px;
+		  		right: -5rem;
+		  		bottom: 2.5rem;
+		  		width: 16.85rem;
+		  		height: 4.05rem;
 		  		background:transparent url('img/lettering-02.png') left top/cover no-repeat;
 		  	}
 
 			&:after {
 				content: "";
 				position: absolute;
-				top: -200px;
-				left: 125px;
-				width: 324px;
-  				height: 358px;
+				top: -10rem;
+				left: 6.25rem;
+				width: 16.2rem;
+  				height: 17.9rem;
   				z-index: 1;
 				background:transparent url('img/features/slow-01.jpg') left top/cover no-repeat;
 			}
@@ -38,12 +38,17 @@
 			&:before {
 				content: "";
 				position: absolute;
-				top: 100px;
-				left: -150px;
-				width: 363px;
-				height: 275px;
+				top: 5rem;
+				left: -7.5rem;
+				width: 18.15rem;
+				height: 13.75rem;
 				z-index: 2;
 				background:transparent url('img/features/slow-02.jpg') left top/cover no-repeat;
 			}
 		}
+		@include mq('850', max) {
+			padding-left: 0;
+			padding-top: 400px;
+		}
+		
 	}	

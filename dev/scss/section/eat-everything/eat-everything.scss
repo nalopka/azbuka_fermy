@@ -13,4 +13,7 @@
 
 		background: transparent url('img/eat-everything/lettering-03.png') left top/cover no-repeat;
 	}
+	@include mq('850', max) {
+		display: none;
+	}
 }

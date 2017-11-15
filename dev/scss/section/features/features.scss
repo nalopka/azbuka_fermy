@@ -4,6 +4,11 @@
 	@extend %desktop-padding;
 	padding-bottom: 300px;
 	padding-top: 150px;
-	overflow: hidden;
+	
+	@include mq('850', max) {
+		padding-bottom: 150px;
+		padding-top: 200px;
+		// overflow: hidden;
+	}
 	
 }

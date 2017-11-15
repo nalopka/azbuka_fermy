@@ -25,11 +25,34 @@ h2 {
 %desktop-padding {
 	padding-left: $desktop-padding;
 	padding-right: $desktop-padding;
+	
 	@include mq("desktop-wide", min) {
 		padding-left: $desktop-padding + 10%;
 		padding-right: $desktop-padding + 10%;
 	}
+	@include mq("850", max) {
+		padding-left: $desktop-padding - 5%;
+		padding-right: $desktop-padding - 5%;
+	}
 }
+
+@include mq("850", max) {
+    html {
+    	font-size: 16px;
+    }
+    h1,h2,h3 {
+    	font-size: 1.875rem;
+    }
+}
+
+@include mq("560", max) {
+    html {
+    	font-size: 12px;
+    }
+    h1,h2,h3 {
+    	font-size: 1.675rem;
+    }
+ }
 
 
 

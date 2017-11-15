@@ -2,12 +2,11 @@
 	@extend %desktop-padding;
 	padding-top: 8rem;
 	padding-bottom: 5rem;
+	text-align: center;
 	.text {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
-		text-align: center;
 	}
 
 	ul {
@@ -17,9 +16,9 @@
 		li {
 			@extend %icon-font;
 			@extend %icon;
-			margin-right: 20px;
-			margin-left: 20px;
-			max-width: 120px;
+			margin-right: 1rem;
+			margin-left: 1rem;
+			max-width: 6rem;
 		}
 
 		$list: (fruit, fish, milk, tea, cake);
@@ -31,6 +30,22 @@
 	p { 
 		max-width: 570px;
 		padding-bottom: 40px;
+	}
+	@include mq('850', max) {
+		text-align: left;
+		padding-top: 0;
+		.text {
+			align-items: flex-start;
+		}
+		ul {
+			flex-wrap: wrap;
+			justify-content: center;
+			li {
+				margin-top: 10px;
+				margin-right: 0.5rem;
+				margin-left: 0.5rem;
+			}
+		}
 	}
 
 }

@@ -15,4 +15,17 @@
 		padding-left: $desktop-padding + 20%;
 		padding-right: $desktop-padding + 20%;
 	}
+
+	@include mq("850", max) {
+		overflow: hidden;
+		padding-top: 50px;
+		padding-bottom: 150px;
+		display: flex;
+		flex-direction: column;
+		padding-left: $desktop-padding - 5%;
+		padding-right: $desktop-padding - 5%;
+		.about {
+			width: 100%;
+		}
+	}
 }
