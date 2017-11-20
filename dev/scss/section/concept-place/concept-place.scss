@@ -16,16 +16,19 @@
 		padding-right: $desktop-padding + 20%;
 	}
 
-	@include mq("850", max) {
+	@include mq("1024", max) {
 		overflow: hidden;
 		padding-top: 50px;
-		padding-bottom: 150px;
-		display: flex;
-		flex-direction: column;
+		padding-bottom: 0;
+
 		padding-left: $desktop-padding - 5%;
 		padding-right: $desktop-padding - 5%;
 		.about {
 			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-bottom: 10rem;
 		}
 	}
 }

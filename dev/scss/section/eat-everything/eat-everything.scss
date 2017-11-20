@@ -3,17 +3,16 @@
 	position: relative;
 	background: transparent url('img/eat-everything/words.jpg') left top/cover no-repeat;
 	&:before {
+		content: '';
 		position: absolute;
 		left: 50%;
 		top: 50%;
 		transform: translateY(-50%);
-		width: 435px;
-		height: 104px;
-		content: '';
-
+		width: 21.75rem;
+		height: 5.2rem;
 		background: transparent url('img/eat-everything/lettering-03.png') left top/cover no-repeat;
 	}
-	@include mq('850', max) {
+	@include mq('iphone7plus', max) {
 		display: none;
 	}
 }

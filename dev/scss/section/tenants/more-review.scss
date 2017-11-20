@@ -17,7 +17,6 @@
 			visibility: hidden;
 		}
 		li {
-			@extend %icon-font;
 			@extend %icon;
 			width: 180px;
 			margin-right: 0;

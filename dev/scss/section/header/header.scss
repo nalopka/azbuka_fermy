@@ -20,12 +20,12 @@
   		align-items: center;
   		justify-content: space-between;
 
-      background: transparent url('img/header/header-border.svg') left top/cover no-repeat;
+      background: transparent url('img/header/header-border.svg') center/cover no-repeat;
 
   		h1 { 
             width: 5.35rem;
             height: 5.6rem;
-            background: transparent url('img/header/logo.png') top left/cover no-repeat;
+            background: transparent url('img/header/logo.png') center/cover no-repeat;
             font-size: 0;
         }
 
@@ -42,7 +42,8 @@
         height: 60vh;
         min-height: 420px;
         .header-welcome {
-            padding: 20px 60px 20px 60px;
+            height: 278px;
+            //НУЖНО КАРТИНКУ ПОД ЭТУ ШИРИНУ
         }
     }
 }
