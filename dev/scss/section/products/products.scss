@@ -37,6 +37,7 @@
 			justify-content: center;
 		}
 		ul {
+			
 			align-self: center;
 			flex-wrap: wrap;
 			justify-content: center;
@@ -45,7 +46,13 @@
 				margin-right: 0.5rem;
 				margin-left: 0.5rem;
 			}
-			// Кривоват последний айтем, надо поправить.
+		}
+	}
+	@include mq("iphone7plus", max) {
+		ul {
+			margin-left: -$desktop-padding + 5%;
+			margin-right: -$desktop-padding + 5%;
+			li { max-width: 7.5rem;}
 		}
 	}
 

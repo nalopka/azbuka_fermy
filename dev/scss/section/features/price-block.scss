@@ -32,21 +32,31 @@
 			background:url('img/features/lettering-01.png') left top/cover no-repeat;
 		}
 	}
-	@include mq('850', max) {
+	@include mq('1024', max) {
 		border: none;
+		padding-top: 0;
 		padding-left: 0;
 		padding-right: 0;
+		width: 100%;
+		height: auto;
+		text-align: center;
+
+		p {
+			margin: 0 auto;
+		}
+		*:not(.price-block-image) {
+			padding-left: $desktop-padding - 5%;
+			padding-right: $desktop-padding - 5%;
+		}
 		.price-block-image {
-			position: relative;
+			width: 100%;
+			position: absolute;
 			left: 0;
-			top: -400px;
-			margin-left: -5%;
+			top: -$image - 100px;
 			&::after { display: none; }
 		}
 	}
-	@include mq('560', max) {
-			.price-block-image {
-				width: 100%;
-			}
+	@include mq('iphone7plus', max) {
+		text-align: left;
 		}
 }

@@ -1,14 +1,25 @@
 .features {
+	$image: 250px;
 	@import "price-block";
 	@import "slow-food";
 	@extend %desktop-padding;
 	padding-bottom: 300px;
 	padding-top: 150px;
+	display: flex;
+	flex-direction: column;
 	
-	@include mq('850', max) {
-		padding-bottom: 150px;
-		padding-top: 200px;
-		// overflow: hidden;
+	@include mq('1024', max) {
+		
+		padding: $image 0 0 0;
+		align-items: center;
+		justify-content: center;
+
+
+
+		// padding-bottom: 150px;
+		
+		// align-items: center;
+		// justify-content: center;
 	}
 	
 }
