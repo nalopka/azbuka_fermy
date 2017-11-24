@@ -1,0 +1,34 @@
+@import "ram-ram";
+@import "sailor-song";
+.foodcourt {
+	border: 1px solid red;
+	padding: 6.25rem 0 15.625rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.main {
+		width: 43.4375rem;
+		height: 18.375rem;
+		
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		border: solid 3px rgba(#8c9f87, 0.4);
+		text-align: center;
+		p {
+			max-width: 62%;
+		}
+	}
+	.wrapper {
+		margin-top: 6rem;
+		box-sizing: border-box;
+		padding: 150px 50px 100px 50px;
+		width: 54rem;
+  		height: 51.5rem;
+  		border: solid 3px rgba(#8c9f87, 0.4);
+	}
+}

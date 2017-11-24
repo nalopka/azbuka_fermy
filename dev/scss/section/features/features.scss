@@ -10,16 +10,9 @@
 	
 	@include mq('1024', max) {
 		
-		padding: $image 0 0 0;
+		padding: 0;
 		align-items: center;
 		justify-content: center;
-
-
-
-		// padding-bottom: 150px;
-		
-		// align-items: center;
-		// justify-content: center;
 	}
 	
 }

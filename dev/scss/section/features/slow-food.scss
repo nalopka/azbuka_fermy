@@ -30,8 +30,8 @@
 			top: -10rem;
 			left: 6.25rem;
 			width: 16.2rem;
-				height: 17.9rem;
-				z-index: 1;
+			height: 17.9rem;
+			z-index: 1;
 			background:transparent url('img/features/slow-01.jpg') left top/cover no-repeat;
 		}
 
@@ -49,11 +49,27 @@
 	@include mq('1024', max) {
 		padding-left: $desktop-padding - 5%;
 		padding-right: $desktop-padding - 5%;
-		padding-top: 28rem;
+		padding-top: 35rem;
+		h2, p {
+			max-width: 420px;
+			margin: 0 auto 20 auto;
+			text-align: center;
+		}
+		.slow-food-image {
+			top: 13rem;
+			left: 50%;
+			transform: translate(-50%);
+		}
 		
 	}
 	@include mq("iphone7plus", max) {
+		h2, p {
+			text-align: left;
+			margin: 0 0 20 0;
+		}
 		.slow-food-image {
+			left: 5rem;
+			transform: translate(0);
 			&:after {
 				left: 5.3rem;
 			}

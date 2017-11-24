@@ -9,11 +9,16 @@ html {
 	color: #444;
 	font-weight: 300;
 }
-h1, h2, h3 {
+h1, h2 {
 	font-family: $font-secondary;
-	font-size: 2rem;
+	font-size: 40px;
 	font-weight: normal;
 	line-height: 1.1;
+}
+h3 {
+	font-size: 26px;
+	font-family: $font-secondary;
+	line-height: 0.92;
 }
 li {
 	font-size: 16px;
@@ -42,7 +47,7 @@ h2 {
     	font-size: 16px;
     }
 
-    h1, h2, h3 {
+    h1, h2 {
     	font-size: 30px;
     }
 
