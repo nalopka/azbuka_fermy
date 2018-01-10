@@ -12,6 +12,7 @@
 	    width: 24.5rem;
   		height: 15.55rem;
       box-sizing: border-box;
+      padding-top: 1.8rem;
       padding-bottom: 2.5rem;
       text-align: center;
     
@@ -23,21 +24,25 @@
       background: transparent url('img/header/header-border.svg') center/contain no-repeat;
 
   		h1 { 
-            width: 5.35rem;
-            height: 5.6rem;
-            background: transparent url('img/header/logo.png') center/contain no-repeat;
+            width: 4.625rem;
+            height: 5.625rem;
+            // width: 74px;
+            // height: 90px;
+            background: transparent url('img/header/logo.svg') center/contain no-repeat;
             font-size: 0;
         }
 
   		h2 {  
             max-width: 22.75rem;
-            margin-bottom: 0;
+            margin: 10px 0;
+            // margin-bottom: 0;
         }
 
-		p {
-			font-size: 15px;
-			color: #726f6f;
-        }
+  		p {
+
+  			font-size: 15px;
+  			color: #726f6f;
+      }
 	}
 	@include mq('1024', max) {
         height: 50vh;

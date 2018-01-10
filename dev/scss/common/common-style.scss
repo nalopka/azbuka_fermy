@@ -9,6 +9,10 @@ html {
 	color: #444;
 	font-weight: 300;
 }
+body {
+	max-width: 1680px;
+	margin: 0 auto;
+}
 h1, h2 {
 	font-family: $font-secondary;
 	font-size: 40px;
@@ -32,10 +36,10 @@ h2 {
 	padding-left: $desktop-padding;
 	padding-right: $desktop-padding;
 	
-	@include mq("desktop-wide", min) {
-		padding-left: $desktop-padding + 10%;
-		padding-right: $desktop-padding + 10%;
-	}
+	// @include mq("desktop-wide", min) {
+	// 	padding-left: $desktop-padding + 10%;
+	// 	padding-right: $desktop-padding + 10%;
+	// }
 	@include mq("1024", max) {
 		padding-left: $desktop-padding - 5%;
 		padding-right: $desktop-padding - 5%;

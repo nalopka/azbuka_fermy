@@ -1,11 +1,21 @@
 doctype html
 html(lang='ru')
 	head
+		title Soloma-маркет
 		meta(charset='UTF-8')
 		link(rel='stylesheet', href='main.css')
+		link(rel="icon" href="img/favicon.jpg")/
+		link(rel="apple-touch-icon-precomposed" sizes="152x152" href="img/social/apple-icon.png")/
 		meta(name='viewport', content='width=device-width')
-		title Азбука фермы
-		
+		meta(charset='UTF-8')/
+		meta(name="description" content="")/
+		meta(name="keywords" content="")/
+		meta(name='viewport', content='width=device-width')/
+		meta(property="og:title" content="Soloma")/
+		meta(property="og:description" content="")/
+		meta(property="og:image" content="")/
+		meta(property="og:url" content="")/
+	body
 		include index/header.jade
 		include index/concept-place.jade
 		include index/eat-everything.jade
@@ -15,7 +25,6 @@ html(lang='ru')
 		include index/foodcourt.jade
 		//- include index/tenants.jade
 		//- include index/footer.jade
-	body
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
 		script(src="main.min.js")
 
