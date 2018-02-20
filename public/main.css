@@ -115,7 +115,7 @@ h2 { margin-bottom: 22px; }
 @media screen and (max-width: 414px) { .products ul { margin-left: -5%; margin-right: -5%; }
   .products ul li { max-width: 7.5rem; } }
 
-.features { max-width: 1280px; padding-bottom: 300px; padding-top: 150px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.features { overflow: hidden; max-width: 1280px; padding-bottom: 300px; padding-top: 150px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
 .features .price-block { -webkit-box-sizing: border-box; box-sizing: border-box; border: solid 3px rgba(140, 159, 135, 0.4); position: relative; width: 29rem; height: 23rem; padding-top: 55px; padding-left: 65px; padding-right: 100px; }
 
@@ -145,7 +145,7 @@ h2 { margin-bottom: 22px; }
 
 .features .slow-food .slow-food-image:before { content: ""; position: absolute; top: 5rem; left: -7.5rem; width: 18.15rem; height: 13.75rem; z-index: 2; background: transparent url("img/features/slow-02.jpg") left top/cover no-repeat; }
 
-@media screen and (max-width: 1024px) { .features .slow-food { padding-left: 5%; padding-right: 5%; padding-top: 35rem; }
+@media screen and (max-width: 1024px) { .features .slow-food { padding-left: 5%; padding-right: 5%; padding-top: 35rem; padding-bottom: 55px; }
   .features .slow-food h2, .features .slow-food p { max-width: 420px; margin: 0 auto 20 auto; text-align: center; }
   .features .slow-food .slow-food-image { top: 13rem; left: 50%; -webkit-transform: translate(-50%); -ms-transform: translate(-50%); transform: translate(-50%); } }
 
@@ -164,7 +164,46 @@ h2 { margin-bottom: 22px; }
 
 .masterclass p { max-width: 450px; }
 
-.foodcourt { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 90px 0; }
+.foodcourt { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 90px 0 200px 0; }
+
+.foodcourt .about { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.foodcourt .about .aboutImage { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.foodcourt .about .imageOne { position: relative; top: 80px; left: 10px; z-index: 1; width: 14.65rem; height: 14.65rem; background: rgba(26, 20, 16, 0.09) url("img/foodcourt/01.jpg") center/cover no-repeat; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); }
+
+.foodcourt .about .imageTwo { position: relative; top: 0px; z-index: 2; width: 14.4rem; height: 21.5rem; background: rgba(26, 20, 16, 0.09) url("img/foodcourt/02.jpg") center/cover no-repeat; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); }
+
+.foodcourt .about .imageBorder { position: absolute; left: 407px; top: 261px; width: calc(22.2rem - 6px); height: calc(13.95rem - 6px); border: solid 3px rgba(140, 159, 135, 0.4); }
+
+.foodcourt .about .imageBorder .lettering { position: absolute; left: 100px; bottom: -30px; width: 15.7rem; height: 2.9rem; background: transparent url("img/foodcourt/lettering-01.png") center/contain no-repeat; }
+
+.foodcourt .about .imageBorder .letteringImage { position: absolute; top: 56px; left: 278px; width: 19.8rem; height: 14.85rem; background: rgba(26, 20, 16, 0.09) url("img/foodcourt/03.jpg") center/cover no-repeat; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); }
+
+.foodcourt .about .aboutIntro { -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 35px; padding-left: 50px; }
+
+.foodcourt .about .aboutIntro p { max-width: 400px; }
+
+@media screen and (max-width: 1024px) { .foodcourt { padding-top: 56px; }
+  .foodcourt .about { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+  .foodcourt .about .aboutImage { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .foodcourt .about .imageBorder { left: auto; bottom: auto; top: 220px; right: -50px; }
+  .foodcourt .about .imageBorder .lettering { left: -90px; bottom: -15px; }
+  .foodcourt .about .imageBorder .letteringImage { display: none; }
+  .foodcourt .about .aboutIntro { text-align: center; padding-left: 19px; padding-right: 19px; margin-bottom: 50px; } }
+
+@media screen and (max-width: 414px) { .foodcourt .about .aboutImage { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  .foodcourt .about .imageOne { top: 44px; left: 0; width: 175px; height: 206px; }
+  .foodcourt .about .imageTwo { left: -20px; width: 200px; height: 281px; }
+  .foodcourt .about .imageBorder { width: 155px; height: 153px; border-right: none; left: auto; bottom: auto; top: 170px; right: 0; }
+  .foodcourt .about .imageBorder .lettering { left: -90px; }
+  .foodcourt .about .aboutIntro { text-align: left; } }
+
+@media screen and (max-width: 320px) { .foodcourt .about .aboutImage { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+  .foodcourt .about .imageOne { top: 44px; left: 0; width: 132px; height: 161px; }
+  .foodcourt .about .imageTwo { left: auto; width: 158px; height: 236px; }
+  .foodcourt .about .imageBorder { top: 150px; }
+  .foodcourt .about .imageBorder .lettering { left: -70px; } }
 
 .tenants { padding-right: 5%; padding-top: 150px; padding-bottom: 150px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 

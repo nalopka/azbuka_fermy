@@ -50,6 +50,7 @@
 		padding-left: $desktop-padding - 5%;
 		padding-right: $desktop-padding - 5%;
 		padding-top: 35rem;
+		padding-bottom: 55px;
 		h2, p {
 			max-width: 420px;
 			margin: 0 auto 20 auto;
@@ -63,6 +64,7 @@
 		
 	}
 	@include mq("iphone7plus", max) {
+
 		h2, p {
 			text-align: left;
 			margin: 0 0 20 0;
