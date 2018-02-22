@@ -1,15 +1,39 @@
 section.tenants
-	.review
-		h2 Арендаторам
-		p В «Азбуке фермы» вы найдёте продукты не только на каждый день, но и редкие деликатесы от российских производителей, которые сложно купить в супермаркетах.
-		.text-input
-			input(type="tel" placeholder="Телефон" name="phone")
-		button Обратный звонок
-		button Перезвоните мне
-	ul.more-review
-		li.empty
-		li.storage Место для хранения продукции
-		li.ads Мощная рекламная поддержка
-		li.ready Торговое&nbsp;пространство под&nbsp;ключ
-		li.place Близко от центра Москвы
-		li.empty
+	.tenantsMain
+		.tenantsHeader
+			h2 Арендаторам
+			p На «Солома-маркете» вы&nbsp;найдёте продукты не&nbsp;только на&nbsp;каждый день, но&nbsp;и&nbsp;редкие деликатесыот&nbsp;российских производителей, которые сложно купить в&nbsp;супермаркетах.
+		.tenantsSection
+			.tenantsAbout
+				.about
+					p Инвестор проекта и&nbsp;управляющая&nbsp;компания:
+					a(href="#" ) Quicksilver Company
+				.about
+					p Проектировщик проекта:
+					a(href="#") Under Construction Group
+				.about
+					a(href="#").plan Скачать план проекта
+			.tenantsFeatures
+				.feature-item.storage Место для хранения продукции
+				.feature-item.commercial Мощная рекламная поддержка
+				.feature-item.place Торговое пространство под ключ
+				.feature-item.location Близко от центра Москвы
+		button.callback Обратный звонок
+		form(data-form="closed")
+			.text-input
+				input(type="tel" placeholder="Телефон" name="phone")
+			button.callback-open(type="submit") Перезвоните мне
+	//- .review
+	//- 	h2 Арендаторам
+	//- 	p В «Азбуке фермы» вы найдёте продукты не только на каждый день, но и редкие деликатесы от российских производителей, которые сложно купить в супермаркетах.
+	//- 	.text-input
+	//- 		input(type="tel" placeholder="Телефон" name="phone")
+	//- 	button Обратный звонок
+	//- 	button Перезвоните мне
+	//- ul.more-review
+	//- 	li.empty
+	//- 	li.storage Место для хранения продукции
+	//- 	li.ads Мощная рекламная поддержка
+	//- 	li.ready Торговое&nbsp;пространство под&nbsp;ключ
+	//- 	li.place Близко от центра Москвы
+	//- 	li.empty

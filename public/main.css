@@ -24,9 +24,9 @@ li { font-size: 16px; }
 
 h2 { margin-bottom: 22px; }
 
-.products, .features, .masterclass, .tenants { padding-left: 10%; padding-right: 10%; }
+.products, .features, .masterclass { padding-left: 10%; padding-right: 10%; }
 
-@media screen and (max-width: 1024px) { .products, .features, .masterclass, .tenants { padding-left: 5%; padding-right: 5%; } }
+@media screen and (max-width: 1024px) { .products, .features, .masterclass { padding-left: 5%; padding-right: 5%; } }
 
 @media screen and (max-width: 1024px) { html { font-size: 16px; }
   h1, h2 { font-size: 30px; }
@@ -41,11 +41,9 @@ h2 { margin-bottom: 22px; }
 
 @media screen and (max-width: 320px) { html { font-size: 12px; } }
 
-.tenants .review button { padding: 8px 42px; background-color: #433939; border: none; cursor: pointer; font-size: 0.8rem; line-height: 1.89; text-align: center; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); color: #f9f6f3; }
+.products ul li { position: relative; padding-top: 5rem; margin-right: 20px; text-align: center; }
 
-.products ul li, .tenants .more-review li { position: relative; padding-top: 5rem; margin-right: 20px; text-align: center; }
-
-.products ul li::before, .tenants .more-review li::before { content: ''; position: absolute; top: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 6.4rem; height: 5rem; background-position: center; background-size: 50%; background-repeat: no-repeat; }
+.products ul li::before { content: ''; position: absolute; top: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 6.4rem; height: 5rem; background-position: center; background-size: 50%; background-repeat: no-repeat; }
 
 .index-header { background-color: #DDDDDD; height: 80vh; min-height: 700px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; background: url("img/header/header.jpg") center/cover no-repeat; }
 
@@ -205,35 +203,57 @@ h2 { margin-bottom: 22px; }
   .foodcourt .about .imageBorder { top: 150px; }
   .foodcourt .about .imageBorder .lettering { left: -70px; } }
 
-.tenants { padding-right: 5%; padding-top: 150px; padding-bottom: 150px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.tenants { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 75px 0; background-color: #888; }
 
-.tenants .review { -ms-flex-negative: 0; flex-shrink: 0; }
+.tenants .tenantsMain { min-height: 634px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 43px 105px 38px; width: 44rem; height: 31.7rem; margin: 0 auto; background-color: #fff; outline: 1px solid rgba(67, 57, 57, 0.75); outline-offset: -10px; }
 
-.tenants .review p { max-width: 303px; padding-bottom: 30px; }
+.tenants .tenantsHeader { text-align: center; max-width: 570px; }
 
-.tenants .review .text-input { width: 214px; height: 45px; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 8px 14px; margin-bottom: 10px; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); border: 1px solid #433939; }
+.tenants .tenantsSection { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: 250px; padding-top: 50px; }
 
-.tenants .review input { background: transparent; outline: none; border: none; width: 100%; line-height: 28px; font-size: 0.8rem; }
+.tenants .tenantsAbout { width: 40%; height: 100%; }
 
-.tenants .more-review { position: relative; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 50px; padding-left: 20px; padding-right: 20px; width: 31rem; height: 24rem; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-negative: 0; flex-shrink: 0; border: solid 3px rgba(140, 159, 135, 0.4); }
+.tenants .tenantsAbout .about { font-size: 16px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; height: 77px; padding-bottom: 35px; }
 
-.tenants .more-review .empty { visibility: hidden; }
+.tenants .tenantsAbout .about a { display: inline; font-size: 13px; text-transform: uppercase; line-height: 1.69; letter-spacing: 1.9px; color: #433939; text-decoration: none; padding-bottom: 1px; padding-top: 7px; border-bottom: 1px solid #433939; }
 
-.tenants .more-review li { width: 180px; margin-right: 0; }
+.tenants .tenantsAbout .about .plan { padding-top: 0; font-family: Yeseva One, cursive; text-transform: none; color: black; font-weight: bold; line-height: normal; letter-spacing: normal; font-size: 18px; }
 
-.tenants .more-review:before { content: ""; position: absolute; top: -30px; left: -25px; width: 11.5rem; height: 11.25rem; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); background: transparent url("img/tenants/rent-01.jpg") left top/cover no-repeat; }
+.tenants .tenantsAbout .about:nth-of-type(2) { padding-bottom: 20px; }
 
-.tenants .more-review:after { content: ""; position: absolute; width: 10.5rem; height: 14.5rem; bottom: -80px; right: -30px; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); background: transparent url("img/tenants/rent-02.jpg") left top/cover no-repeat; }
+.tenants .tenantsAbout .about:last-of-type { height: 50px; padding-bottom: 0; }
 
-.tenants .ready::before { background-image: url("img/icons/ready.svg"); }
+.tenants .tenantsFeatures { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 60%; }
 
-.tenants .ads::before { background-image: url("img/icons/ads.svg"); }
+.tenants .tenantsFeatures .storage:before { background: transparent url("img/tenants/storage.svg") center/cover no-repeat; }
 
-.tenants .storage::before { background-image: url("img/icons/storage.svg"); }
+.tenants .tenantsFeatures .commercial:before { background: transparent url("img/tenants/commercial.svg") center/cover no-repeat; }
 
-.tenants .place::before { background-image: url("img/icons/place.svg"); }
+.tenants .tenantsFeatures .place:before { background: transparent url("img/tenants/place.svg") center/cover no-repeat; }
 
-@media screen and (min-width: 1440px) { .tenants { padding-right: 10%; padding-left: 30%; } }
+.tenants .tenantsFeatures .location:before { background: transparent url("img/tenants/location.svg") center/cover no-repeat; }
+
+.tenants .tenantsFeatures .feature-item { position: relative; font-size: 14px; text-align: center; width: 50%; height: 50%; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 70px 20px 0 20px; }
+
+.tenants .tenantsFeatures .feature-item:before { content: ""; position: absolute; top: 0; left: 50%; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); display: inline-block; height: 65px; width: 65px; }
+
+.tenants form { display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; bottom: 38px; }
+
+.tenants form .text-input { font-family: Yeseva One, cursive; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.tenants form .text-input input { padding: 13px 33px; display: block; font-size: 16px; }
+
+.tenants [data-form="closed"] { display: none; }
+
+.tenants [data-form="open"] { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.tenants .callback { position: absolute; bottom: 38px; }
+
+.tenants .hidden { display: none; }
+
+.tenants button { margin: 0 5px; border: none; background-color: #222222; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); color: #fff; font-size: 16px; padding: 13px 33px; font-family: Yeseva One, cursive; }
+
+@media screen and (max-width: 1024px) { .tenants .tenantsMain { padding: 43px 50px 38px; } }
 
 .index-footer { height: 31rem; border: 1px solid green; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 10%; padding-top: 100px; }
 
