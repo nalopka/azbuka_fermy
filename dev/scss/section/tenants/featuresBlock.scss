@@ -1,0 +1,51 @@
+.tenantsFeatures {
+		display: flex;
+		flex-wrap: wrap;
+		width: 60%;
+
+		$tenants-list: (storage, commercial, place, location);
+		@each $feature-item in $tenants-list {
+			.#{$feature-item}:before {
+				background:transparent url('img/tenants/#{$feature-item}.svg') center/cover no-repeat;
+
+			}
+		}
+		.feature-item {
+			position: relative;
+			font-size: 14px;
+			text-align: center;
+			width: 50%;
+			height: 50%;
+			box-sizing: border-box;
+			padding: 70px 20px 0 20px;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%, 0);
+				display: inline-block;
+				height: 65px;
+				width: 65px;
+			}
+		}
+		@include mq("1024", max) {
+			width: 55%;
+			.feature-item {
+				padding: 70px 0 0 0;
+			}
+		}
+		@include mq("iphone7plus", max) {
+			margin-left: -10px;
+			width: 100%;
+			height: auto;
+			.feature-item {
+				font-size: 12px;
+				padding: 70px 0 0 0;
+			}
+			.feature-item:nth-of-type(1),
+			.feature-item:nth-of-type(2) {
+				margin-bottom: 20px;
+			}
+		}
+	}

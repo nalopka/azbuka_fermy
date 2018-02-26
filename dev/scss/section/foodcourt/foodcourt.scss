@@ -64,7 +64,8 @@
 		}
 	}
 	@include mq("1024", max) {
-		padding-top: 56px;
+		padding-top: 25px;
+		padding-bottom: 170px;
 		.about {
 			box-sizing: border-box;
 			flex-direction: column-reverse;
@@ -93,6 +94,7 @@
 		}
 	}
 	@include mq("iphone7plus", max) {
+		padding-bottom: 120px;
 		.about  {
 			.aboutImage {
 				justify-content: center;

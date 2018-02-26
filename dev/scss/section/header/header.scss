@@ -51,7 +51,19 @@
           h2 {
             align-self: center;
             max-width: 15.625rem;
+
           }
         }
+    }
+    @include mq("iphone5", max) {
+      .header-welcome {
+         // height: 300px;
+         padding-bottom: 0;
+        h2 {
+           max-width: none;
+        }
+       
+       
+      }
     }
 }
