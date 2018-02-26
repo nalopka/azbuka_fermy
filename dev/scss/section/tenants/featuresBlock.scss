@@ -35,7 +35,7 @@
 				padding: 70px 0 0 0;
 			}
 		}
-		@include mq("iphone7plus", max) {
+		@include mq("768", max) {
 			margin-left: -10px;
 			width: 100%;
 			height: auto;

@@ -41,6 +41,8 @@ h2 { margin-bottom: 22px; }
 
 @media screen and (max-width: 320px) { html { font-size: 12px; } }
 
+.tenants button { margin: 0 5px; border: none; background-color: #433939; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); color: #fff; font-size: 16px; padding: 13px 33px; font-family: Yeseva One, cursive; }
+
 .products ul li { position: relative; padding-top: 5rem; margin-right: 20px; text-align: center; }
 
 .products ul li::before { content: ''; position: absolute; top: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 6.4rem; height: 5rem; background-position: center; background-size: 50%; background-repeat: no-repeat; }
@@ -86,7 +88,7 @@ h2 { margin-bottom: 22px; }
 
 .eat-everything:before { content: ''; position: absolute; left: 50%; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 21.75rem; height: 5.2rem; background: transparent url("img/eat-everything/lettering-03.png") left top/cover no-repeat; }
 
-@media screen and (max-width: 414px) { .eat-everything { display: none; } }
+@media screen and (max-width: 767px) { .eat-everything { display: none; } }
 
 .products { padding-top: 8rem; padding-bottom: 5rem; text-align: center; }
 
@@ -193,7 +195,7 @@ h2 { margin-bottom: 22px; }
   .foodcourt .about .imageBorder .letteringImage { display: none; }
   .foodcourt .about .aboutIntro { text-align: center; padding-left: 19px; padding-right: 19px; margin-bottom: 50px; } }
 
-@media screen and (max-width: 414px) { .foodcourt { padding-bottom: 120px; }
+@media screen and (max-width: 559px) { .foodcourt { padding-bottom: 120px; }
   .foodcourt .about .aboutImage { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   .foodcourt .about .imageOne { top: 44px; left: 0; width: 175px; height: 206px; }
   .foodcourt .about .imageTwo { left: -20px; width: 200px; height: 281px; }
@@ -226,7 +228,7 @@ h2 { margin-bottom: 22px; }
 @media screen and (max-width: 1024px) { .tenants .tenantsFeatures { width: 55%; }
   .tenants .tenantsFeatures .feature-item { padding: 70px 0 0 0; } }
 
-@media screen and (max-width: 414px) { .tenants .tenantsFeatures { margin-left: -10px; width: 100%; height: auto; }
+@media screen and (max-width: 767px) { .tenants .tenantsFeatures { margin-left: -10px; width: 100%; height: auto; }
   .tenants .tenantsFeatures .feature-item { font-size: 12px; padding: 70px 0 0 0; }
   .tenants .tenantsFeatures .feature-item:nth-of-type(1), .tenants .tenantsFeatures .feature-item:nth-of-type(2) { margin-bottom: 20px; } }
 
@@ -244,7 +246,7 @@ h2 { margin-bottom: 22px; }
 
 @media screen and (max-width: 1024px) { .tenants .tenantsAbout { width: 45%; } }
 
-@media screen and (max-width: 414px) { .tenants .tenantsAbout { margin-top: 46px; padding-bottom: 70px; width: 100%; height: auto; }
+@media screen and (max-width: 767px) { .tenants .tenantsAbout { margin-top: 46px; padding-bottom: 70px; width: 100%; height: auto; }
   .tenants .tenantsAbout .about { max-width: 250px; }
   .tenants .tenantsAbout .about p { font-size: 14px; }
   .tenants .tenantsAbout .about .plan { font-size: 16px; } }
@@ -269,12 +271,10 @@ h2 { margin-bottom: 22px; }
 
 .tenants .hidden { display: none; }
 
-.tenants button { margin: 0 5px; border: none; background-color: #433939; -webkit-box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); box-shadow: 0 2px 10px 0 rgba(41, 31, 29, 0.18); color: #fff; font-size: 16px; padding: 13px 33px; font-family: Yeseva One, cursive; }
-
 @media screen and (max-width: 1024px) { .tenants .tenantsMain { min-height: 600px; padding: 43px 50px 38px; }
   .tenants .tenantsSection { height: auto; } }
 
-@media screen and (max-width: 414px) { .tenants { padding: 48px 10px 100px 14px; }
+@media screen and (max-width: 767px) { .tenants { padding: 48px 10px 100px 14px; }
   .tenants .tenantsMain { outline: 0; padding: 27px 27px 0 24px; width: auto; height: auto; }
   .tenants .tenantsHeader { text-align: left; }
   .tenants .tenantsSection { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; height: auto; }

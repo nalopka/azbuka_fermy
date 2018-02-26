@@ -43,7 +43,7 @@
 		@include mq("1024", max) {
 			width: 45%;
 		}
-		@include mq("iphone7plus", max) {
+		@include mq("768", max) {
 			margin-top: 46px;
 			padding-bottom: 70px;
 			width: 100%;

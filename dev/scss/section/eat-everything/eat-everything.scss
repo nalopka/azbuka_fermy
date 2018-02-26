@@ -12,7 +12,7 @@
 		height: 5.2rem;
 		background: transparent url('img/eat-everything/lettering-03.png') left top/cover no-repeat;
 	}
-	@include mq('iphone7plus', max) {
+	@include mq('768', max) {
 		display: none;
 	}
 }
