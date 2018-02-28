@@ -1,9 +1,20 @@
 .index-footer {
-	height: 150px;
+	position: relative;
+	height: 242px;
 	display: flex;
-	justify-content: center;
+	box-sizing:border-box;
+	padding-bottom: 43px;
+	justify-content: flex-end;
 	align-items: center;
 	flex-direction: column;
+	background:transparent url('img/footer.svg') center top no-repeat;
+	.logo {
+		position: absolute;
+		top: 30px;
+		width: 78px;
+  		height: 90px;
+  		background:transparent url('img/header/logo.svg') center/contain no-repeat;
+	}
 	address {
 		display: block;
 		max-width: 645px;
@@ -13,16 +24,19 @@
 		text-align: center;
 	}
 	a {
+		font-size: 16px;
 		display: inline-block;
 		margin: 5px 0;
 		color: inherit;
 		text-decoration: none;
 	}
 	@include mq("iphone7plus", max) {
+		height: 292px;
 		box-sizing: border-box;
-		padding: 0 14px 0 22px;
+		padding: 0 14px 31px 22px;
 		
 		a {
+			padding-top: 20px;
 			font-size: 16px;
 		}
 	}
